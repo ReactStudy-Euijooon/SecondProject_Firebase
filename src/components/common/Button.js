@@ -6,11 +6,11 @@ import PropTypes from 'prop-types';
 
 //children은 keyword이기 때문에 children처럼 사용하려면 반드시 
 //children이라고 써야 함.
-const Button = ({whenPress,children}) => {
+const Button = ({onPress,children}) => {
     const { buttonStyle, textStyle } = styles;
     return (
         <TouchableOpacity
-        onPress={whenPress}
+        onPress={onPress}
         style={buttonStyle}>
 
             <Text style={textStyle}>{children}</Text>
@@ -19,7 +19,7 @@ const Button = ({whenPress,children}) => {
 }
 
 Button.propTypes ={
-    whenPress:PropTypes.func,
+    onPress:PropTypes.func,
     children:PropTypes.string
 };
 const styles = {
