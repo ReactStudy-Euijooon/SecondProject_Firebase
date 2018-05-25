@@ -1,9 +1,3 @@
 {
-    "parser":"babel-eslint",
-    "extends" : "plugin:react/recommended",
-    "rules":{
-        "react/jsx-filename-extension": 0,
-        "react/jsx-uses-vars" : "true"
-
-    }
+    "extends" : "rallycoding"
 }

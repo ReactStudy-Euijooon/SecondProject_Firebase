@@ -10,7 +10,7 @@ const CardSection = (props) => {
 };
 
 CardSection.prototype = {
-    children:PropTypes.array
+    children:PropTypes.string
 }
 
 const style = {

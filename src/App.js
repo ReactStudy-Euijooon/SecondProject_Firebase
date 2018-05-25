@@ -18,14 +18,11 @@ class App extends Component {
     render() {
         return (
             <View>
-                <Header headerText="Authentication">
+                <Header headerText="Authentication"/>
 
-                </Header>
-                
-                
-                <LoginForm/>
-            
-                
+                <LoginForm />
+
+
             </View>
         );
     }

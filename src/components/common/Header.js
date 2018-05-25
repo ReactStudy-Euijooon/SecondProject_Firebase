@@ -31,9 +31,7 @@ const Header = (props) => {
     
 };
 
-Header.prototype ={
-    headerText:PropTypes.string
-}
+
 /*
     Flex Box
     justifyContent: 'flex-end' 수직으로 맨 아래로 보냄
