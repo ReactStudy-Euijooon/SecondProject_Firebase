@@ -13,6 +13,8 @@ const Spinner = ({size}) => {
 const styles = {
     spinnerStyle :{
         flex:1,
+        paddingTop: 10,
+        paddingBottom: 10,
         justifyContent : 'center',
         alignItems: 'center',
 

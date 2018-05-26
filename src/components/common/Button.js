@@ -6,22 +6,18 @@ import PropTypes from 'prop-types';
 
 //children은 keyword이기 때문에 children처럼 사용하려면 반드시 
 //children이라고 써야 함.
-const Button = ({onPress,children}) => {
+const Button = ({ onPress, children }) => {
     const { buttonStyle, textStyle } = styles;
     return (
         <TouchableOpacity
-        onPress={onPress}
-        style={buttonStyle}>
+            onPress={onPress}
+            style={buttonStyle}>
 
             <Text style={textStyle}>{children}</Text>
         </TouchableOpacity>
     );
 }
 
-Button.propTypes ={
-    onPress:PropTypes.func,
-    children:PropTypes.string
-};
 const styles = {
     textStyle: {
         alignSelf: 'center',
@@ -46,4 +42,4 @@ const styles = {
 
 //index.js로 한번에 내보내려면 default 를 쓰지 않고 {}로 객체를 내보낸다 
 //export default Button;
-export {Button};
+export { Button };
